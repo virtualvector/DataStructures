@@ -1,2 +1,3 @@
-Personal repository with implemented data structures
-goal : one commit a day
+Personal repository with implemented data structures<br>
+
+    goal : one commit a day
