@@ -9,13 +9,8 @@
 #include<string>
 #include<cstring>
 #include<cstdlib>
-#include<queue>
-#include<utility>
-#include<fstream>
-#include<sstream>
 #include<cmath>
-#include<stack>
-#include<assert.h>
+#include<queue>
 using namespace std;
 
 void insertion_sort(vector<int>& a){
@@ -31,7 +26,7 @@ void insertion_sort(vector<int>& a){
                     j--;
             
             }
-            a[j+1]=temp;
+                a[j+1]=temp;
 
             }
 
@@ -43,14 +38,11 @@ int main()
 
 ios_base::sync_with_stdio(0);
 
-vector<int> v;
-v.push_back(5);
-v.push_back(4);
-v.push_back(3);
-v.push_back(5);
-v.push_back(5);
-v.push_back(1);
-v.push_back(5);
+
+vector<int> v(100);
+for(int i=0;i<100;i++){
+    v[i]=rand()%100;
+}
 insertion_sort(v);
 
 for(int i=0;i<v.size();i++)cout<<v[i]<<" ";
