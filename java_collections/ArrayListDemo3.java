@@ -15,8 +15,15 @@ class ArrayListDemo3 {
 
         for(CustomObj o : al){
             
-            System.out.println(al.contains(c3));
-            System.out.println(o.toString());
+            System.out.println(o.equals(c3));
+
+
+        }
+        
+        al.remove(c3);
+        for(CustomObj o : al){
+            
+            System.out.println(o.equals(c3));
 
 
         }
