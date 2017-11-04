@@ -15,6 +15,7 @@ int main(){
     push(my_stack,20);
     
     display(my_stack);
-
+    printf("\n%d",peek(my_stack));
+    
 return 0;
 }

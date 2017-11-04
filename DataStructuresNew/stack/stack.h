@@ -54,4 +54,10 @@ void display(Stack* s){
 
 }
 
+int peek(Stack* s){
+    
+    return s->a[s->top];
+
+}
+
 
