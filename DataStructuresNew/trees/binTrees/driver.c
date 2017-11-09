@@ -4,29 +4,16 @@
 
 int main(){
     
-    Node* root;
-    root = (Node*)malloc(sizeof(Node));
-    root->data=10;
+    Node* root = new_node(10);
+    root->left = new_node(20);
+    root->right = new_node(30);
 
-
-    Node* node1;
-    node1 = (Node*)malloc(sizeof(Node));
-    node1->data=20;
-    node1->left=NULL;
-    node1->right=NULL;
-
-    root->left=node1;
-
-
-
-    Node* node2;
-    node2 = (Node*)malloc(sizeof(Node));
-    node2->data=30;
-    node2->left = NULL;
-    node2->right=NULL;
-
-
-    root->right=node2;
+    root->left->left = new_node(40);
+    root->right->right = new_node(50);
+    root->left->right = new_node(60);
+    root->right->left = new_node(70);
+    
+    
     printf("preorder \t");
     preorder(root);
 
