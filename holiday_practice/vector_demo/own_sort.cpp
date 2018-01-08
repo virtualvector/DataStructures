@@ -43,15 +43,32 @@ typedef vector<int> VI;
 //typedef long long int LL;
 //typedef __int64 LL;
 
+bool binary_pred(int a ,int b){
+
+    if(a<b) return false;
+    else return true;
+
+
+}
+
+
 int main()
 {
 
 ios_base::sync_with_stdio(0);
 
-string s = "hello";
-string* s1 = &s;
-(*s1)[1]='p';
-cout<<s;
+vector<int> v(10);
+for(int i=0;i<=9;i++){
+    
+    v[i]=i;
+
+}
+sort(v.begin(),v.end());
+
+for(auto& val:v){
+    cout<<val<<" ";
+}
+
 
 
 
