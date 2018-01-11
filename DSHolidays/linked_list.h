@@ -52,6 +52,7 @@ void display(Node* header){
         temp=temp->next;
 
     }
+    printf("\n");
 
 }
 
