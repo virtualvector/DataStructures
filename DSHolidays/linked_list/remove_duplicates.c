@@ -1,4 +1,4 @@
-
+//program to remove duplicate nodes in a linked list
 #include <stdio.h>
 #include <stdlib.h>
 #include "linked_list.h"
