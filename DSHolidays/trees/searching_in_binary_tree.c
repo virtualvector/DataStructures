@@ -8,7 +8,7 @@
 int search_element(Node* root,int data){
     
    int temp; 
-    if(root==NULL) return 0;
+    if(root==NULL) return -1;
 
     else {
 
