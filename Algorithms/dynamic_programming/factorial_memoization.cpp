@@ -14,12 +14,12 @@ int factorial_memo(int n, unordered_map<int,int>& um)
     if(um.find(n)!=um.end())
     {
         return um[n];
-        
+
     }
     else
     {
         return um[n]=factorial_memo(n-1,um);
-    
+
 
     }
 
@@ -38,5 +38,5 @@ int main()
     cout<<um[n]<<endl;
 
 
-return 0;
+    return 0;
 }
