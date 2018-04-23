@@ -37,8 +37,9 @@ int main()
     v.push_back('A');
     v.push_back('B');
     v.push_back('C');
+    v.push_back('D');
 
-    power_set_gen(v,3);
+    power_set_gen(v,4);
 
 
 
