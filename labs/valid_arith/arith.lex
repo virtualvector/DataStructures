@@ -12,7 +12,7 @@ int flag = 0;
     int i=0;
     for(i=0;yytext[i]!='\0';i++)
     {
-        printf("running\n");
+//        printf("running\n");
         if(yytext[i]=='+' || yytext[i]=='*')
         op++;
         else 
@@ -31,7 +31,4 @@ void main()
     yylex();
     if(flag) printf("%d %d",op,digi);
     else printf("not valid");
-
-
-
 }
