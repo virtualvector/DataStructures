@@ -1,0 +1,3 @@
+yacc -d ...
+cc y.tab.h lex.yy.c -ly -ll
+
