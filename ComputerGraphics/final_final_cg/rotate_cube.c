@@ -23,11 +23,11 @@ void polygon(int a,int b,int c,int d){
     glBegin(GL_POLYGON);
     glColor3fv(colors[a]);
     glVertex3fv(vertices[a]);
-    glColor3fv(colors[b]);
+    glColor3fv(colors[a]);
     glVertex3fv(vertices[b]);
-    glColor3fv(colors[c]);
+    glColor3fv(colors[a]);
     glVertex3fv(vertices[c]);
-    glColor3fv(colors[d]);
+    glColor3fv(colors[a]);
     glVertex3fv(vertices[d]);
     glEnd();
 }
@@ -59,7 +59,7 @@ void display(){
 void spincube(){
     theta[axis]+=1.0;
     if(theta[axis]>360.0)theta[axis]-=360.0;
-    glutPostRedisplay();
+    display();
 }
 
 void mouse(int btn,int state,int x,int y){
